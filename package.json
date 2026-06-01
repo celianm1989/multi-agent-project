@@ -1,0 +1,18 @@
+{
+  "name": "dev-agent-orchestrator",
+  "version": "0.1.0",
+  "description": "Thin orchestrator that drives Managed Agents defined in the Claude Console",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/run.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.100.1",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

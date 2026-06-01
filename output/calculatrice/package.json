@@ -1,0 +1,13 @@
+{
+  "name": "calculatrice-html",
+  "version": "1.0.0",
+  "description": "Calculatrice avec interface graphique HTML dynamique (clavier généré en JS, historique, thème clair/sombre).",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "python3 -m http.server 8000",
+    "test": "node test/engine.test.js"
+  },
+  "keywords": ["calculatrice", "calculator", "html", "javascript"],
+  "license": "MIT"
+}

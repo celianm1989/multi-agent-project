@@ -1,0 +1,17 @@
+{
+  "name": "basic-calculator",
+  "version": "1.0.0",
+  "description": "A basic Node.js calculator (add, subtract, multiply, divide) with a CLI and unit tests.",
+  "main": "calc.js",
+  "bin": {
+    "calc": "calc.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "start": "node calc.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

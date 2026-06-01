@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculatrice</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="calculator" aria-label="Calculatrice">
+      <header class="calculator__header">
+        <h1 class="calculator__title">Calculatrice</h1>
+        <button id="theme-toggle" class="icon-btn" type="button" title="Changer de thème" aria-label="Changer de thème">◐</button>
+      </header>
+
+      <div class="display" role="status" aria-live="polite">
+        <div id="preview" class="display__preview"></div>
+        <div id="expression" class="display__expression">0</div>
+      </div>
+
+      <!-- Le clavier est généré dynamiquement par js/ui.js -->
+      <div id="keypad" class="keypad" role="group" aria-label="Clavier de la calculatrice"></div>
+    </section>
+
+    <aside class="panel" aria-label="Historique">
+      <div class="panel__header">
+        <h2 class="panel__title">Historique</h2>
+        <button id="clear-history" class="text-btn" type="button">Effacer</button>
+      </div>
+      <ul id="history" class="history"></ul>
+      <p id="history-empty" class="history__empty">Aucun calcul pour l'instant.</p>
+      <p class="panel__hint">Astuce : utilisez aussi le clavier de votre ordinateur (chiffres, + − × ÷, Entrée, Retour arrière, Échap).</p>
+    </aside>
+  </main>
+
+  <script src="js/engine.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>
